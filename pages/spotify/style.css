@@ -1,0 +1,38 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #1DB954;
+    background-color: #121212;
+}
+h1{
+    text-align: center;
+}
+#mood-selector{
+    text-align: center;
+    margin-bottom: 30px;
+}
+#song-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.song{
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    border: solid green 1px;
+    background-color:  #1DB954;
+    
+}
+a{
+    color: black;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#ajanl{
+    background-color: #1DB954;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}

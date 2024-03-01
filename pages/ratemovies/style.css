@@ -1,0 +1,18 @@
+body{
+    background-image: url(img/bg/bg.jpg);
+    color: white;
+}
+header{
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+
+}
+#filmek{
+    margin: 30px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+
+    backdrop-filter: blur(20px);
+}

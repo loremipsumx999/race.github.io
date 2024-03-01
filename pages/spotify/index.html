@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Spotify</title>
+    <link href="spoti.png" rel="icon">
+</head>
+<body>
+    <h1>Spotify</h1>
+    <div id="mood-selector">
+        <label for="mood">Milyen a hangulatod ma?</label>
+        <select id="mood">
+            <option value="boldog">Boldog</option>
+            <option value="szomoru">Szomorú</option>
+            <option value="utazos">Utazós</option>
+            <option value="idokapszula">Időkapszula</option>
+            <option value="techno">Techno</option>
+            <option value="karneval">Karnevál</option>
+        </select>
+        <button id="ajanl" onclick="getSongsByMood()">Ajánlás</button>
+    </div>
+    <div id="song-list">
+        <!-- Ha lenne nekünk node.js 🤣😎😧 -->
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

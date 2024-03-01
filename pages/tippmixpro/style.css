@@ -1,0 +1,39 @@
+body{
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: #849DAB;
+    width: 100%;
+}
+#link-text{
+    text-decoration: none;
+    color: white;
+}
+#link {
+    text-align: center;
+    margin-top: -50px;
+    text-decoration: none;
+    word-spacing: 10px;
+    font-weight: bold;
+    padding: 10px;
+}
+#table{
+    color: white;
+    border: solid 1px;
+    border-radius: 8px;
+}
+#odds button{
+    height: 40px;
+    width: 75px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+#szelvenyek{
+    color: white;
+    float: right;
+    margin-top: -430px;
+}

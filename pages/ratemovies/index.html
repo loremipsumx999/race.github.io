@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FilmMágia.net</title>
+    <link href="img/icon/icon.png" rel="icon"></a>
+</head>
+<header>
+    <input type="text" for="search" placeholder="Film keresése">
+</header>
+<body>
+    <div id="filmek">
+        <table>
+            <tr>
+                <td><img src="img/movies/fighter.PNG" width="200" height="300"></td>
+                <td><img src="img/movies/macko.PNG" width="200"></td>
+                <td><img src="img/movies/lastofus.PNG" width="200" height="300"></td>
+                <td><img src="img/movies/serbfilm.PNG" width="200" height="300"></td>
+                <td><img src="img/movies/breakingbad.PNG" width="200" height="300"></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="range" max="5" id="csuszka" value="0" data-film="Fighter">
+                    <button type="button" onclick="send('csuszka')">Send</button>
+                </td>
+                <td>
+                    <input type="range" max="5" id="csuszka1" value="0" data-film="A mackó">
+                    <button type="button" onclick="send('csuszka1')">Send</button>
+                </td>
+                <td>
+                    <input type="range" max="5" id="csuszka2" value="0" data-film="The Last of Us">
+                    <button type="button" onclick="send('csuszka2')">Send</button>
+                </td>
+                <td>
+                    <input type="range" max="5" id="csuszka3" value="0" data-film="A szerb film">
+                    <button type="button" onclick="send('csuszka3')">Send</button>
+                </td>
+                <td>
+                    <input type="range" max="5" id="csuszka4" value="0" data-film="The Breaking Bad">
+                    <button type="button" onclick="send('csuszka4')">Send</button>
+                </td>
+            </tr>
+            <tr>
+                <td><p>Fighter</p></td>
+                <td><p>A mackó</p></td>
+                <td><p>The Last of Us</p></td>
+                <td><p>A szerb film</p></td>
+                <td><p>Breaking Bad</p></td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        function send(csuszkaId){
+            var csuszka = document.getElementById(csuszkaId);
+            var csuszkaValue = csuszka.value;
+            var filmName = csuszka.getAttribute("data-film");
+            alert("Sikeresen értékelted a(z) " + filmName + "-(e)t " + csuszkaValue + " ponttal");
+        }
+    </script>
+</body>
+</html>

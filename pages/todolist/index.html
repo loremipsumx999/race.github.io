@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app1.js"></script>
+    <script src="app.js"></script>
+    <title>ToDo</title>
+</head>
+<body>
+    <div id="todo">
+        <h1>ToDo</h1>
+        <input type="text" id="taskInput" placeholder="Új feladat">
+        <button onclick="addTask()">Hozzáadás</button>
+        <ul id="taskList"></ul>
+    </div>
+    <div id="grades">
+        <h2>Diák</h2>
+        <input type="text" id="nameInput" placeholder="Név">
+        <input type="number" id="gradeInput" placeholder="Osztályzat" min="1" max="5">
+        <button onclick="addStudent()">Diák hozzáadása</button>
+        <ul id="studentList"></ul>
+        <p id="averageDisplay"></p>
+    </div>
+</body>
+</html>

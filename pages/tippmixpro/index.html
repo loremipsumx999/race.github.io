@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="dohi.png" rel="icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Online fogadás | TippmixPRO</title>
+</head>
+<header>
+    <img src="tippmixpro-logo.png" height="70" width="150"></a>
+    <div id="link">
+        <a id="link-text" href="">Fogadás</a>
+        <a id="link-text" href="">Élő</a>
+        <a id="link-text" href="">E-Sport</a>
+        <a id="link-text" href="">V-Sport</a>
+        <a id="link-text" href="">Promó</a>
+        <a id="link-text" href="">Magazin</a>
+        <a id="link-text" href="">Segítség</a>
+    </div>
+
+</header>
+<body>
+    <table id="table">
+        <tr>
+            <td><h4>NBI Bajnokság</h4></td>
+        </tr>
+        <tr>
+            <td>FTC</td>
+            <td id="odds1"><button onclick="bet('FTC-MTK', 'Hazai', 1.33)">Hazai<br>1,33</button></td>
+            <td id="odds2"><button onclick="bet('FTC-MTK', 'Döntetlen', 6.00)">Döntetlen<br>6,00</button></td>
+            <td id="odds3"><button onclick="bet('FTC-MTK', 'Vendég', 10.00)">Vendég<br>10,00</button></td>
+            <td>MTK</td>
+        </tr>
+        <br>
+        <tr>
+            <td>Újpest</td>
+            <td id="odds1"><button onclick="bet('Újpest-DVSC', 'Hazai', 3.50)">Hazai<br>3,50</button></td>
+            <td id="odds2"><button onclick="bet('Újpest-DVSC', 'Döntetlen', 3.50)">Döntetlen<br>3,50</button></td>
+            <td id="odds3"><button onclick="bet('Újpest-DVSC', 'Vendég', 2.27)">Vendég<br>2,27</button></td>
+            <td>DVSC</td>
+        </tr>
+        <tr>
+            <td>Zalaegerszeg</td>
+            <td id="odds1"><button onclick="bet('Zalaegerszeg-Hajdúböszörmény', 'Hazai', 1.46)">Hazai<br>1,46</button></td>
+            <td id="odds2"><button onclick="bet('Zalaegerszeg-Hajdúböszörmény', 'Döntetlen', 4.00)">Döntetlen<br>4,00</button></td>
+            <td id="odds3"><button onclick="bet('Zalaegerszeg-Hajdúböszörmény', 'Vendég', 11.00)">Vendég<br>11,00</button></td>
+            <td>Hajdúböszörmény</td>
+        </tr>
+    </table>
+    <table id="table">
+        <tr>
+            <td><h4>Serie A</h4></td>
+        </tr>
+        <tr>
+            <td>Salernitana</td>
+            <td id="odds1"><button onclick="bet('Salernitana-Empoli', 'Hazai', 1.33)">Hazai<br>1,33</button></td>
+            <td id="odds2"><button onclick="bet('Salernitana-Empoli', 'Döntetlen', 3.25)">Döntetlen<br>6,00</button></td>
+            <td id="odds3"><button onclick="bet('Salernitana-Empoli', 'Vendég', 3.05)">Vendég<br>10,00</button></td>
+            <td>Empoli</td>
+        </tr>
+        <br>
+        <tr>
+            <td>Roma</td>
+            <td id="odds1"><button onclick="bet('Roma-Internazionale', 'Hazai', 1.16)">Hazai<br>1,16</button></td>
+            <td id="odds2"><button onclick="bet('Roma-Internazionale', 'Döntetlen', 5.20)">Döntetlen<br>5,20</button></td>
+            <td id="odds3"><button onclick="bet('Roma-Internazionale', 'Vendég', 9.40)">Vendég<br>9,40</button></td>
+            <td>Internazionale</td>
+        </tr>
+        <tr>
+            <td>Milan</td>
+            <td id="odds1"><button onclick="bet('Milan-Napoli', 'Hazai', 1.23)">Hazai<br>1,23</button></td>
+            <td id="odds2"><button onclick="bet('Milan-Napoli', 'Döntetlen', 6.00)">Döntetlen<br>6,00</button></td>
+            <td id="odds3"><button onclick="bet('Milan-Napoli', 'Vendég', 18.00)">Vendég<br>18,00</button></td>
+            <td>Napoli</td>
+        </tr>
+    </table>
+    <table id="szelvenyek">
+        <td><h3>Szelvények</h3></td>
+    </table>
+
+    <script>
+       function bet(csapat, fogadas, odds) {
+            var tet = prompt("Mennyit szeretnél rá rakni?");
+            if (tet !== null && tet !== "") {
+                var nyeremeny = tet * odds;
+                var table = document.getElementById("szelvenyek");
+                var row = table.insertRow(-1);
+                var cell1 = row.insertCell(0);
+                var cell2 = row.insertCell(1);
+                var cell3 = row.insertCell(2);
+                cell1.innerHTML = csapat;
+                cell2.innerHTML = fogadas;
+                cell3.innerHTML = nyeremeny.toFixed(2) + " Ft";
+            } else {
+                alert("Valami nem jó");
+            }
+        }
+    </script>
+</body>
+</html>

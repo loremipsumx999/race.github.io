@@ -2,6 +2,7 @@
     font-family: rh;
     src: url(rh.ttf);
 }
+
 body{
     background-color: #222;
     animation-name: color;
@@ -10,6 +11,7 @@ body{
     font-family: rh;
     text-align: center;
 }
+
 @keyframes color {
     0% {
       background-color: #222;
@@ -21,6 +23,27 @@ body{
       background-color: #222;
     }
 }
+
+#navbar{
+  text-align: left;
+  word-spacing: 15px;
+}
+
+a:link{
+  text-decoration: none !important;
+  color: #949494;
+  transition: 0.5s ease;
+  text-shadow: black 2px 2px 2px ;
+}
+
+a:hover{
+  color:#fff;
+}
+
+a:visited{
+  color: #fff;
+}
+
 #like{
     width: 10%;
     height: 100px;
@@ -30,6 +53,7 @@ body{
     border-radius: 10%;
     border-color: #fff;
 }
+
 #like:hover{
     background-color:#949494;
     cursor: pointer;
