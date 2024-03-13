@@ -1,13 +1,12 @@
-let skala = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
+let valasz = ["Pohárban", "pohárban", "poharban"];
 function nyalas() {
-    let valasz;
+    let kerdes;
     do {
-        valasz = prompt("Mennyire? 1-10");
-        if (!skala.includes(valasz)) {
-            alert("1-10-ig számmal bro");
+        kerdes = prompt("Miben fürdenek az etióp gyerekek?");
+        if (!valasz.includes(kerdes)) {
+            alert("");
         }
-    } while (!skala.includes(valasz));
+    } while (!valasz.includes(kerdes));
 
-    alert("Az már komoly 😩");
-    alert("JÁKOB WALK");
+    alert("hello world");
 }

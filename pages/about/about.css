@@ -10,6 +10,7 @@ body{
     animation-iteration-count: infinite;
     font-family: rh;
     text-align: center;
+    font-size: clamp(10px, 2vw, 25px) !important;
 }
 @keyframes color {
     0% {
@@ -31,25 +32,23 @@ body{
 a:link{
   text-decoration: none !important;
   color: #949494;
-  transition: 0.5s ease;
-
+  transition: 0.8s ease;
 }
 
-a:hover{
-  color:#fff;
+a:hover, a:hover:visited{
+  color: #fff;
 }
 
 a:visited{
-  color: #fff;
+  color: #949494;
 }
 
 #video{
   text-align: center;
+  width: clamp(200px, 50%, 800px);
 }
 #btn{
   text-align: center;
-  width: 10%;
-  height: 100px;
   font-size: 18px;
   background-color:#fff;
   transition: 0.5s ease;
